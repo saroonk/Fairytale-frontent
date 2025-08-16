@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Details</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="productdetails.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/euclid-circular" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+
+
+
+     
+<div class="top-banner">
+    <div>FREE SHIPPING OVER $99</div>
+    <div>Mid-Season Sale Up to 70% OFF</div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+    <div class="container">
+
+
+        <div class="row w-100 align-items-start d-none d-lg-flex">
+
+            <div class="col-lg-3">
+                <a class="navbar-brand" href="#">
+                    <img src="images/IMG_1917[1].JPG" alt="Logo">
+                </a>
+            </div>
+
+      
+            <div class="col-lg-6 d-flex flex-column">
+                <div class="search-box mb-2">
+                    <input type="text" placeholder="What are you looking for Today? e.g diamond ring">
+                    <i class="fas fa-search"></i>
+                </div>
+                <ul class="navbar-nav navbar-nav-row">
+                    <li class="nav-item"><a class="nav-link" href="#">THEME DEMO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PRODUCTHOT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NEW IN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TREND</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">COLLECTIONS</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 d-flex justify-content-center align-items-center mt-1 ">
+                <div class="nav-icons d-flex align-items-center ">
+                    <i class="fa-regular fa-user"></i>
+  
+                    <i class="fa-regular fa-heart"><span class="badge">2</span></i>
+                    <i class="fas fa-shopping-cart"><span class="badge">2</span></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="d-lg-none w-100">
+
+            <div class="small-screen-top-row">
+                <a class="navbar-brand" href="#">
+                    <img src="images/IMG_1917[1].JPG" alt="Logo">
+                </a>
+                <div class="d-flex align-items-center">
+                    <div class="nav-icons">
+                      <i class="fa-regular fa-user"></i>
+    
+                      <i class="fa-regular fa-heart"><span class="badge">2</span></i>
+                      <i class="fas fa-shopping-cart"><span class="badge">2</span></i>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#smallScreenNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+           
+            <div class="small-screen-search-row mb-2">
+                <div class="search-box">
+                    <input type="text" placeholder="What are you looking for Today? e.g diamond ring">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+         
+            <div class="collapse" id="smallScreenNav">
+                <ul class="navbar-nav d-flex flex-column w-100">
+                    <li class="nav-item"><a class="nav-link" href="#">THEME DEMO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">SHOP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PRODUCTHOT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">NEW IN</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TREND</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">COLLECTIONS</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+
+
+
+    <div class="container mt-5">
+        <div class="row pt-md-5 pt-1 ">
+            <div class="col-lg-6 col-md-6 mb-4">
+                <div class="image-section">
+                    <img id="mainImage" 
+                         src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         alt="Rani Pink Floral Patterned Saree" 
+                         class="main-image">
+                    
+                    <div class="sub-images-container">
+                       
+                        <div class="sub-images-owl desktop">
+                            <div class="desktop-nav">
+                                <button id="desktopPrev" onclick="scrollDesktopImages('up')">
+                                    <i class="fas fa-chevron-up"></i>
+                                </button>
+                                <button id="desktopNext" onclick="scrollDesktopImages('down')">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <div class="desktop-slider-wrapper">
+                                <div class="desktop-slider-container" id="desktopSlider">
+                                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                         alt="View 1" class="sub-image active" onclick="changeMainImage(this)">
+                                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                         alt="View 2" class="sub-image" onclick="changeMainImage(this)">
+                                    <img src="images/image (1).png" 
+                                         alt="View 3" class="sub-image" onclick="changeMainImage(this)">
+                                    <img src="images/IMG_1917[1].JPG" 
+                                         alt="View 4" class="sub-image" onclick="changeMainImage(this)">
+                                    <img src="images/image.png" 
+                                         alt="View 5" class="sub-image" onclick="changeMainImage(this)">
+                                    <img src="images/Rectangle 47.png" 
+                                         alt="View 6" class="sub-image" onclick="changeMainImage(this)">
+                                </div>
+                            </div>
+                        </div>
+
+                     
+                        <div class="owl-carousel sub-images-owl mobile px-4">
+                            
+                            <div class="item">
+                                 <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                         alt="View 1" class="sub-image active" onclick="changeMainImage(this)">
+                            </div>
+                            <div class="item">
+                               <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" 
+                                         alt="View 2" class="sub-image" onclick="changeMainImage(this)">
+                            </div>
+                            <div class="item">
+                                <img src="images/image (1).png" 
+                                         alt="View 3" class="sub-image" onclick="changeMainImage(this)">
+                            </div>
+                            <div class="item">
+                                <img src="images/IMG_1917[1].JPG" 
+                                         alt="View 4" class="sub-image" onclick="changeMainImage(this)">
+                            </div>
+                            <div class="item">
+                                <img src="images/image.png" 
+                                         alt="View 5" class="sub-image" onclick="changeMainImage(this)">
+                            </div>
+                            <div class="item">
+                                <img src="images/Rectangle 47.png" 
+                                         alt="View 6" class="sub-image" onclick="changeMainImage(this)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="col-lg-6 col-md-6 ps-md-4 ps-0">
+                    <div class="product-info px-3 ">
+                        
+                        <p class="topdesc">women's Casual Saree <span class="category-badge">91 left</span></p>
+                        
+                       
+                        <h1 class="product-title">Rani Pink Floral Patterned Saree</h1>
+                        
+                   
+                        <div class="product-price">$69.99</div>
+                        
+                
+                        <div class="action-buttons">
+                               
+                                <button class="btn btn-buy-now" onclick="buyNow()">
+                                <i class="bi bi-bag-fill me-1"></i>
+                                Buy Now
+                                </button>
+
+                         
+                                <button class="btn btn-add-cart" onclick="addToCart()">
+                                <i class="bi bi-cart-plus-fill me-1"></i>
+                                Add To Cart
+                                </button>
+
+                        </div>
+
+
+
+
+
+
+                        <div class="product-details-box ">
+                            <div class="row g-4">
+                               
+                                <div class="col-md-6">
+                                <div class="mb-3">
+                                    <p class="detail-label mb-1">Material</p>
+                                    <p class="detail-value mb-0">High-Quality Denim (100% Cotton)</p>
+                                </div>
+                                <div>
+                                    <p class="detail-label mb-1">Color</p>
+                                    <div class="d-flex gap-2">
+                                    <div class="color-circle bg-dark selected" onclick="selectColor(this)"></div>
+                                    <div class="color-circle" onclick="selectColor(this)" style="background:#d7a86e;"></div>
+                                    <div class="color-circle" onclick="selectColor(this)" style="background:#d9d16f;"></div>
+                                    </div>
+                                </div>
+                                </div>
+
+                              
+                                <div class="col-md-6">
+                                <div class="mb-3">
+                                    <p class="detail-label mb-1">Fit</p>
+                                    <p class="detail-value mb-0">Classic Fit</p>
+                                </div>
+                                <div>
+                                    <p class="detail-label mb-1">Sizes</p>
+                                    <div class="d-flex gap-2 flex-wrap">
+                                    <div class="size-btn" onclick="selectSize(this)">S</div>
+                                    <div class="size-btn active" onclick="selectSize(this)">M</div>
+                                    <div class="size-btn" onclick="selectSize(this)">L</div>
+                                    <div class="size-btn" onclick="selectSize(this)">XL</div>
+                                    <div class="size-btn" onclick="selectSize(this)">XXL</div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        
+                    
+                        
+                        
+                        
+                            <div class="ship-section">
+                                <h6>Shipping Information</h6>
+                                <div class="info-item">
+                                    <ul>
+                                        <li>Standard shipping: <strong>3-5 business days</strong></li>
+                                        <li>Express shipping options available at checkout</li>
+                                        
+                                    </ul>
+                                </div>
+                                
+                            </div>
+                            
+                      
+                            <div class="feature-section">
+                                <h6>Features</h6>
+                                <div class="info-item">
+                                    <ul>
+                                        <li>Distressed detailing for a rugged look</li>
+                                        <li>Button-up front closure with engraved metal buttons</li>
+                                        <li>Two side pockets for added functionality</li>
+                                        <li>Adjustable buttoned cuffs for a personalized fit</li>
+                                        <li>Back waist tabs for customizable styling</li>
+                                    </ul>
+                                </div>
+                        
+                            </div>
+                       
+                    </div>
+                </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="testimonial-section">
+        <div class="container">
+
+            <div class="row section-header">
+                <div class="col-lg-8 col-md-7">
+                    <h1 class="main-heading">Reviews. <span class="subtitle">Product Reviews</span></h1>
+                 
+                    <p class="description mt-4">
+                        At Klothink, our customers are the heartbeat of our brand. Explore the heartfelt testimonials shared by those who have experienced the magic of Klothink fashion.                    </p>
+                </div>
+                <div class="col-lg-4 col-md-5 d-flex align-items-center justify-content-md-end justify-content-center">
+                    <a href="#" class="view-all-btn">View All Testimonials</a>
+                </div>
+            </div>
+
+            <div class="row">
+            <div class="col-12">
+                <div class="testimonial-slider">
+                    <div class="owl-carousel owl-theme testimonials-carousel">
+                    
+                        <div class="testimonial-card">
+                            <div class="card-header">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b120?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sarah Thompson" class="profile-image">
+                                <div class="customer-info">
+                                    <h5 class="customer-name">Sarah Thompson</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Klothink exceeded my expectations. The gown's quality and design made me feel like a queen. Fast shipping, too!
+                            </p>
+                        </div>
+
+                      
+                        <div class="testimonial-card">
+                            <div class="card-header">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Rajesh Patel" class="profile-image">
+                                <div class="customer-info">
+                                    <h5 class="customer-name">Rajesh Patel</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Absolutely love the style and warmth of the jacket. A perfect blend of fashion and functionality!
+                            </p>
+                        </div>
+
+                      
+                        <div class="testimonial-card">
+                            <div class="card-header">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Emily Walker" class="profile-image">
+                                <div class="customer-info">
+                                    <h5 class="customer-name">Emily Walker</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Adorable and comfortable! My daughter loves her new outfit. Thank you, Klothink, for dressing our little fashionista.
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="card-header">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Michael Chen" class="profile-image">
+                                <div class="customer-info">
+                                    <h5 class="customer-name">Michael Chen</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Outstanding quality and attention to detail. The craftsmanship is evident in every stitch. Highly recommend Klothink!
+                            </p>
+                        </div>
+
+                  
+                        <div class="testimonial-card">
+                            <div class="card-header">
+                                <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Anna Rodriguez" class="profile-image">
+                                <div class="customer-info">
+                                    <h5 class="customer-name">Anna Rodriguez</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                The perfect fit and beautiful design. I've received so many compliments! Will definitely be ordering more from Klothink.
+                            </p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="card-header">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="David Kim" class="profile-image">
+                                <div class="customer-info">
+                                    <h5 class="customer-name">David Kim</h5>
+                                    <div class="rating">
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                        <i class="fas fa-star star"></i>
+                                    </div>
+                                </div>
+                                <i class="fas fa-quote-right quote-icon"></i>
+                            </div>
+                            <p class="testimonial-content">
+                                Exceptional service and premium quality clothing. The attention to customer satisfaction is remarkable. Five stars!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    
+<footer class="footer-section">
+        <div class="container">
+            <div class="row">
+          
+                <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
+                    <h6>Company Info</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Laura's Closet</a></li>
+                        <li><a href="#">Social Responsibility</a></li>
+                        <li><a href="#">Affiliate</a></li>
+                        <li><a href="#">Fashion Blogger</a></li>
+                    </ul>
+                </div>
+                
+      
+                <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
+                    <h6>Help & Support</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">How to Order</a></li>
+                        <li><a href="#">How to Track</a></li>
+                        <li><a href="#">Size Chart</a></li>
+                    </ul>
+                </div>
+                
+             
+                <div class="col-lg-2 col-md-6 col-sm-6 mb-4">
+                    <h6>Customer Care</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Bonus Point</a></li>
+                        <li><a href="#">Notices</a></li>
+                    </ul>
+                </div>
+                
+              
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-4">
+                    <h6>Socials</h6>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    </div>
+                    
+                    <div class="newsletter-section">
+                        <h6>Sign Up for Laura's Closet Style News</h6>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit" class="subscribe-btn">Subscribe</button>
+                        </div>
+                        <p class="privacy-notice">
+                            By clicking the SUBSCRIBE button, you are agreeing to our <a href="#">Privacy & Cookie Policy</a>
+                        </p>
+                    </div>
+                </div>
+                
+               
+                <div class="col-lg-2 col-md-12 mb-4">
+                    <h6>Platforms</h6>
+                    <div class="platform-icons">
+                        <i class="fab fa-android"></i>
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    
+                    <!-- <div class="payment-methods">
+                        <h6>We Accept</h6>
+                        <div class="payment-icons">
+                            <div class="payment-icon" style="background-color: #eb001b;">MC</div>
+                            <div class="payment-icon" style="background-color: #003087;">PP</div>
+                            <div class="payment-icon" style="background-color: #ffc439;">eBay</div>
+                            <div class="payment-icon" style="background-color: #4285f4;">GPay</div>
+                            <div class="payment-icon" style="background-color: #00a1e0;">AMEX</div>
+                            <div class="payment-icon" style="background-color: #000000;">AP</div>
+                            <div class="payment-icon" style="background-color: #006fcf;">AMEX</div>
+                            <div class="payment-icon" style="background-color: #ff6900;">AMZ</div>
+                            <div class="payment-icon" style="background-color: #00aced;">AMEX</div>
+                            <div class="payment-icon" style="background-color: #0084ff;">SHOP</div>
+                            <div class="payment-icon" style="background-color: #f79100;">BC</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>&copy;2010-2022 Laura's Closet All Rights Reserved</p>
+                        <div class="footer-bottom-links">
+                            <a href="#">Privacy Center</a>
+                            <a href="#">Privacy & Cookie Policy</a>
+                            <a href="#">Manage Cookies</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#">Copyright Notice</a>
+                            <a href="#">Imprint</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+    <script>
+        let desktopScrollPosition = 0;
+        const scrollAmount = 110; // Height of one image + gap
+        let desktopSlider;
+        let mobileCarousel;
+        const visibleDesktopItems = 3;
+
+        $(document).ready(function(){
+    
+            desktopSlider = document.getElementById('desktopSlider');
+            const wrapper = document.querySelector('.desktop-slider-wrapper');
+         
+            wrapper.style.height = `${visibleDesktopItems * 110}px`;
+            
+           
+            mobileCarousel = $('.mobile').owlCarousel({
+                items: 4,
+                margin: 8,
+                nav: true,
+                dots: false,
+                loop: false,
+                mouseDrag: true,
+                touchDrag: true,
+                navText: [
+        '<i class="fa fa-chevron-left"></i>',   // your prev icon
+        '<i class="fa fa-chevron-right"></i>'   // your next icon
+    ],
+                responsive: {
+                    0: {
+                        items: 3,
+                        margin: 5
+                    },
+                    576: {
+                        items: 4,
+                        margin: 8
+                    }
+                }
+            });
+
+            
+            updateDesktopButtons();
+        });
+
+       
+        function scrollDesktopImages(direction) {
+            const wrapper = document.querySelector('.desktop-slider-wrapper');
+            const maxScroll = desktopSlider.scrollHeight - wrapper.clientHeight;
+
+            if (direction === 'down') {
+                desktopScrollPosition = Math.min(desktopScrollPosition + scrollAmount, maxScroll);
+            } else {
+                desktopScrollPosition = Math.max(desktopScrollPosition - scrollAmount, 0);
+            }
+
+            desktopSlider.style.transform = `translateY(-${desktopScrollPosition}px)`;
+            updateDesktopButtons();
+        }
+
+        function updateDesktopButtons() {
+            const wrapper = document.querySelector('.desktop-slider-wrapper');
+            const maxScroll = desktopSlider.scrollHeight - wrapper.clientHeight;
+            
+            document.getElementById('desktopPrev').disabled = desktopScrollPosition <= 0;
+            document.getElementById('desktopNext').disabled = desktopScrollPosition >= maxScroll;
+        }
+
+        
+        function changeMainImage(element) {
+            
+            document.getElementById('mainImage').src = element.src.replace('w=150', 'w=600');
+            
+            
+            document.querySelectorAll('.sub-image').forEach(img => img.classList.remove('active'));
+            element.classList.add('active');
+            
+            
+            if (element.closest('.mobile')) {
+                const imgSrc = element.src;
+                document.querySelectorAll('.desktop .sub-image').forEach(img => {
+                    if (img.src === imgSrc) {
+                        img.classList.add('active');
+                  
+                        scrollDesktopToImage(img);
+                    }
+                });
+            }
+       
+            else if (element.closest('.desktop')) {
+                const imgSrc = element.src;
+                document.querySelectorAll('.mobile .sub-image').forEach(img => {
+                    if (img.src === imgSrc) {
+                        img.classList.add('active');
+                       
+                        const index = $(img).closest('.item').index();
+                        mobileCarousel.trigger('to.owl.carousel', index);
+                    }
+                });
+            }
+        }
+
+        function scrollDesktopToImage(imgElement) {
+            const wrapper = document.querySelector('.desktop-slider-wrapper');
+            const imgPosition = imgElement.offsetTop;
+            const wrapperHeight = wrapper.clientHeight;
+            
+            
+            if (imgPosition < desktopScrollPosition) {
+           
+                desktopScrollPosition = imgPosition;
+            } else if (imgPosition + imgElement.offsetHeight > desktopScrollPosition + wrapperHeight) {
+                
+                desktopScrollPosition = imgPosition + imgElement.offsetHeight - wrapperHeight;
+            }
+            
+            desktopSlider.style.transform = `translateY(-${desktopScrollPosition}px)`;
+            updateDesktopButtons();
+        }
+
+
+        function selectColor(element) {
+            const colorCircles = document.querySelectorAll('.color-circle');
+            colorCircles.forEach(circle => circle.style.boxShadow = 'none');
+            colorCircles.forEach(circle => circle.classList.remove('selected'));
+            
+            element.classList.add('selected');
+            
+            element.style.boxShadow = '0 0 0 2px #007bff';
+            
+            console.log('Selected color:', element.getAttribute('data-color'));
+        }
+        
+      
+
+
+        function selectSize(element) {
+            const sizeBtns = document.querySelectorAll('.size-btn');
+            sizeBtns.forEach(btn => btn.classList.remove('active'));
+            
+            element.classList.add('active');
+            
+            console.log('Selected size:', element.getAttribute('data-size'));
+        }
+        
+       
+
+ 
+        function addToCart() {
+            const selectedColor = document.querySelector('.color-circle[style*="box-shadow"]')?.getAttribute('data-color') || null;
+            const selectedSize = document.querySelector('.size-btn.active')?.getAttribute('data-size') || 'M';
+            
+            const productData = {
+                product_id: '{{ product.id }}', 
+                color: selectedColor,
+                size: selectedSize,
+                quantity: 1,
+                price: 69.99
+            };
+            
+            console.log('Add to cart:', productData);
+            
+           
+        }
+
+
+
+
+
+
+
+
+
+        $(document).ready(function(){
+            $('.testimonials-carousel').owlCarousel({
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                navText: [
+                    '<i class="fas fa-chevron-left"></i>',
+                    '<i class="fas fa-chevron-right"></i>'
+                ],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>
