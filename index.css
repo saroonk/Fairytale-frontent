@@ -180,6 +180,25 @@ html, body {
       gap: 15px;
       margin-top: 30px;
     }
+
+
+    @media (max-width: 560px) {
+
+        .elevate-box {
+     
+      grid-template-columns: repeat(1, 1fr);
+     
+    }
+
+    .search-box input::placeholder{
+  font-size: 0.7rem;
+  color: #958F86;
+}
+
+  
+        
+  
+    }
     .small-box {
       background: #fff;
       border-radius: 8px;
@@ -190,7 +209,7 @@ html, body {
     .small-box h4 {
       font-weight: 600;
       margin-bottom: 5px;
-      font-size: clamp(1.6rem,3vw,2rem);
+      font-size: clamp(1rem,3vw,2rem);
       color: #1A1A1A;
     }
     .small-box p {
