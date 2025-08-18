@@ -36,6 +36,8 @@ html, body {
 
 .navbar-brand img {
     height: clamp(50px,6vw,90px);
+    mix-blend-mode: screen;
+
 }
 
 
@@ -137,6 +139,26 @@ html, body {
 
 
 
+    @media (max-width: 560px) {
+
+        .elevate-box {
+     
+      grid-template-columns: repeat(1, 1fr);
+     
+    }
+
+    .search-box input::placeholder{
+  font-size: 0.5rem !important;
+  color: #958F86;
+  text-align: start;
+
+
+}
+
+  
+        
+  
+    }
 
 
 
