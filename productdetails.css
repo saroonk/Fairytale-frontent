@@ -12,6 +12,16 @@ html, body {
 }
 
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+
 .top-banner {
     background-color: #b79857;
     color: white;
@@ -161,7 +171,7 @@ html, body {
     }
 
 
-    
+
 
 
 
