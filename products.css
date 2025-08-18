@@ -440,7 +440,7 @@ html, body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 2rem;
+            margin-top: 0rem;
         }
 
         .progress-container {

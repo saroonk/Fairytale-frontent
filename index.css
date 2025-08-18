@@ -195,8 +195,9 @@ html, body {
     .hero-carousel {
     height: var(--carousel-height);
     min-height: 600px;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .carousel-item {
@@ -1028,6 +1029,7 @@ font-size: 2.8rem;
     align-items: stretch; 
     position: relative;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .offer-section .row {
