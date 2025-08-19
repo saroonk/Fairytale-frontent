@@ -1838,3 +1838,65 @@ font-size: 2.8rem;
 
 
         
+
+
+
+
+
+
+
+
+
+
+/* ==== Gallery Layout ==== */
+.images-row {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* 
+.images-row .image-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.gallery-item {
+  width: 25%;
+  cursor: pointer;
+}
+
+.row-img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  display: block;
+} */
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0px;   
+}
+
+.row-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;   
+  object-fit: cover;
+  display: block;
+      
+}
+
+.lb-outerContainer {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.lb-image {
+  border: none !important;
+  max-height: 90vh;
+  max-width: 90vw;
+  object-fit: cover;
+}
+
