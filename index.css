@@ -1887,16 +1887,19 @@ font-size: 2.8rem;
       
 }
 
-.lb-outerContainer {
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
+
+/* Make close, prev, next buttons white */
+.glightbox-clean .gclose svg path,
+.glightbox-clean .gnext svg path,
+.glightbox-clean .gprev svg path {
+  stroke: #fff !important;
+  fill: #fff !important;
 }
 
-.lb-image {
-  border: none !important;
-  max-height: 90vh;
-  max-width: 90vw;
-  object-fit: cover;
+/* Optional: increase button size */
+.glightbox-clean .gclose,
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+  width: 50px;
+  height: 50px;
 }
-
